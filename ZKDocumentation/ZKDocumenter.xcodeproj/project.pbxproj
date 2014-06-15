@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D00573F31915EE0900BD8859 /* ZKAppDelegate+Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = D00573F21915EE0900BD8859 /* ZKAppDelegate+Settings.m */; };
+		D0173B0919041526002B093D /* ZKCommentingOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D0173B0819041526002B093D /* ZKCommentingOperation.m */; };
+		D02323B619039FF7008B1775 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D02323B519039FF7008B1775 /* Cocoa.framework */; };
+		D02323C019039FF7008B1775 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D02323BE19039FF7008B1775 /* InfoPlist.strings */; };
+		D02323C219039FF7008B1775 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D02323C119039FF7008B1775 /* main.m */; };
+		D02323C619039FF7008B1775 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D02323C419039FF7008B1775 /* Credits.rtf */; };
+		D02323C919039FF7008B1775 /* ZKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D02323C819039FF7008B1775 /* ZKAppDelegate.m */; };
+		D02323CC19039FF7008B1775 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D02323CA19039FF7008B1775 /* MainMenu.xib */; };
+		D02323CE19039FF7008B1775 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D02323CD19039FF7008B1775 /* Images.xcassets */; };
+		D02323F21903A255008B1775 /* NSString+PDRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = D02323EC1903A255008B1775 /* NSString+PDRegex.m */; };
+		D02323F31903A255008B1775 /* NSString+VVSyntax.m in Sources */ = {isa = PBXBuildFile; fileRef = D02323EF1903A255008B1775 /* NSString+VVSyntax.m */; };
+		D02EB329190BE294008F4FE9 /* multicheck_off.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D02EB327190BE294008F4FE9 /* multicheck_off.tiff */; };
+		D02EB32A190BE294008F4FE9 /* multicheck_on.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D02EB328190BE294008F4FE9 /* multicheck_on.tiff */; };
+		D02EB32F190BF6D0008F4FE9 /* addItem.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D02EB32D190BF6D0008F4FE9 /* addItem.tiff */; };
+		D02EB330190BF6D0008F4FE9 /* removeItem.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D02EB32E190BF6D0008F4FE9 /* removeItem.tiff */; };
+		D0457468190D432000CE7708 /* NSTableView+ContextMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = D0457467190D432000CE7708 /* NSTableView+ContextMenu.m */; };
+		D05415301914CC4F00C8A228 /* VVArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = D054151E1914CC4F00C8A228 /* VVArgument.m */; };
+		D05415311914CC4F00C8A228 /* VVBaseCommenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D05415201914CC4F00C8A228 /* VVBaseCommenter.m */; };
+		D05415321914CC4F00C8A228 /* VVEnumCommenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D05415231914CC4F00C8A228 /* VVEnumCommenter.m */; };
+		D05415331914CC4F00C8A228 /* VVFunctionCommenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D05415251914CC4F00C8A228 /* VVFunctionCommenter.m */; };
+		D05415341914CC4F00C8A228 /* VVMacroCommenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D05415271914CC4F00C8A228 /* VVMacroCommenter.m */; };
+		D05415351914CC4F00C8A228 /* VVMethodCommenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D05415291914CC4F00C8A228 /* VVMethodCommenter.m */; };
+		D05415361914CC4F00C8A228 /* VVPropertyCommenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D054152B1914CC4F00C8A228 /* VVPropertyCommenter.m */; };
+		D05415371914CC4F00C8A228 /* VVStructCommenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D054152D1914CC4F00C8A228 /* VVStructCommenter.m */; };
+		D05415381914CC4F00C8A228 /* VVVariableCommenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D054152F1914CC4F00C8A228 /* VVVariableCommenter.m */; };
+		D054153B1914CC9200C8A228 /* VVDocumenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D054153A1914CC9200C8A228 /* VVDocumenter.m */; };
+		D054153E1914CE3700C8A228 /* VVDocumenterSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = D054153D1914CE3700C8A228 /* VVDocumenterSetting.m */; };
+		D05415401914CEA500C8A228 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D054153F1914CEA500C8A228 /* Carbon.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D00573F11915EE0900BD8859 /* ZKAppDelegate+Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZKAppDelegate+Settings.h"; sourceTree = "<group>"; };
+		D00573F21915EE0900BD8859 /* ZKAppDelegate+Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZKAppDelegate+Settings.m"; sourceTree = "<group>"; };
+		D0173B0719041526002B093D /* ZKCommentingOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKCommentingOperation.h; sourceTree = "<group>"; };
+		D0173B0819041526002B093D /* ZKCommentingOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKCommentingOperation.m; sourceTree = "<group>"; };
+		D02323B219039FF7008B1775 /* ZKDocumenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZKDocumenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D02323B519039FF7008B1775 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D02323B819039FF7008B1775 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D02323B919039FF7008B1775 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D02323BA19039FF7008B1775 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D02323BD19039FF7008B1775 /* ZKDocumenter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZKDocumenter-Info.plist"; sourceTree = "<group>"; };
+		D02323BF19039FF7008B1775 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D02323C119039FF7008B1775 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D02323C319039FF7008B1775 /* ZKDocumenter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZKDocumenter-Prefix.pch"; sourceTree = "<group>"; };
+		D02323C519039FF7008B1775 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		D02323C719039FF7008B1775 /* ZKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKAppDelegate.h; sourceTree = "<group>"; };
+		D02323C819039FF7008B1775 /* ZKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKAppDelegate.m; sourceTree = "<group>"; };
+		D02323CB19039FF7008B1775 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D02323CD19039FF7008B1775 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D02323EB1903A255008B1775 /* NSString+PDRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PDRegex.h"; sourceTree = "<group>"; };
+		D02323EC1903A255008B1775 /* NSString+PDRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PDRegex.m"; sourceTree = "<group>"; };
+		D02323EE1903A255008B1775 /* NSString+VVSyntax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+VVSyntax.h"; sourceTree = "<group>"; };
+		D02323EF1903A255008B1775 /* NSString+VVSyntax.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+VVSyntax.m"; sourceTree = "<group>"; };
+		D02EB327190BE294008F4FE9 /* multicheck_off.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = multicheck_off.tiff; sourceTree = "<group>"; };
+		D02EB328190BE294008F4FE9 /* multicheck_on.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = multicheck_on.tiff; sourceTree = "<group>"; };
+		D02EB32D190BF6D0008F4FE9 /* addItem.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = addItem.tiff; sourceTree = "<group>"; };
+		D02EB32E190BF6D0008F4FE9 /* removeItem.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = removeItem.tiff; sourceTree = "<group>"; };
+		D0457466190D432000CE7708 /* NSTableView+ContextMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTableView+ContextMenu.h"; sourceTree = "<group>"; };
+		D0457467190D432000CE7708 /* NSTableView+ContextMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTableView+ContextMenu.m"; sourceTree = "<group>"; };
+		D054151D1914CC4F00C8A228 /* VVArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVArgument.h; sourceTree = "<group>"; };
+		D054151E1914CC4F00C8A228 /* VVArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVArgument.m; sourceTree = "<group>"; };
+		D054151F1914CC4F00C8A228 /* VVBaseCommenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVBaseCommenter.h; sourceTree = "<group>"; };
+		D05415201914CC4F00C8A228 /* VVBaseCommenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVBaseCommenter.m; sourceTree = "<group>"; };
+		D05415211914CC4F00C8A228 /* VVCommenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVCommenter.h; sourceTree = "<group>"; };
+		D05415221914CC4F00C8A228 /* VVEnumCommenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVEnumCommenter.h; sourceTree = "<group>"; };
+		D05415231914CC4F00C8A228 /* VVEnumCommenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVEnumCommenter.m; sourceTree = "<group>"; };
+		D05415241914CC4F00C8A228 /* VVFunctionCommenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVFunctionCommenter.h; sourceTree = "<group>"; };
+		D05415251914CC4F00C8A228 /* VVFunctionCommenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVFunctionCommenter.m; sourceTree = "<group>"; };
+		D05415261914CC4F00C8A228 /* VVMacroCommenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVMacroCommenter.h; sourceTree = "<group>"; };
+		D05415271914CC4F00C8A228 /* VVMacroCommenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVMacroCommenter.m; sourceTree = "<group>"; };
+		D05415281914CC4F00C8A228 /* VVMethodCommenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVMethodCommenter.h; sourceTree = "<group>"; };
+		D05415291914CC4F00C8A228 /* VVMethodCommenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVMethodCommenter.m; sourceTree = "<group>"; };
+		D054152A1914CC4F00C8A228 /* VVPropertyCommenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVPropertyCommenter.h; sourceTree = "<group>"; };
+		D054152B1914CC4F00C8A228 /* VVPropertyCommenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVPropertyCommenter.m; sourceTree = "<group>"; };
+		D054152C1914CC4F00C8A228 /* VVStructCommenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVStructCommenter.h; sourceTree = "<group>"; };
+		D054152D1914CC4F00C8A228 /* VVStructCommenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVStructCommenter.m; sourceTree = "<group>"; };
+		D054152E1914CC4F00C8A228 /* VVVariableCommenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVVariableCommenter.h; sourceTree = "<group>"; };
+		D054152F1914CC4F00C8A228 /* VVVariableCommenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVVariableCommenter.m; sourceTree = "<group>"; };
+		D05415391914CC9200C8A228 /* VVDocumenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVDocumenter.h; sourceTree = "<group>"; };
+		D054153A1914CC9200C8A228 /* VVDocumenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVDocumenter.m; sourceTree = "<group>"; };
+		D054153C1914CE3700C8A228 /* VVDocumenterSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVDocumenterSetting.h; sourceTree = "<group>"; };
+		D054153D1914CE3700C8A228 /* VVDocumenterSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVDocumenterSetting.m; sourceTree = "<group>"; };
+		D054153F1914CEA500C8A228 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D02323AF19039FF7008B1775 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D02323B619039FF7008B1775 /* Cocoa.framework in Frameworks */,
+				D05415401914CEA500C8A228 /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D02323A919039FF7008B1775 = {
+			isa = PBXGroup;
+			children = (
+				D02323BB19039FF7008B1775 /* ZKDocumenter */,
+				D02323B419039FF7008B1775 /* Frameworks */,
+				D02323B319039FF7008B1775 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D02323B319039FF7008B1775 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D02323B219039FF7008B1775 /* ZKDocumenter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D02323B419039FF7008B1775 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D054153F1914CEA500C8A228 /* Carbon.framework */,
+				D02323B519039FF7008B1775 /* Cocoa.framework */,
+				D02323B719039FF7008B1775 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D02323B719039FF7008B1775 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D02323B819039FF7008B1775 /* AppKit.framework */,
+				D02323B919039FF7008B1775 /* CoreData.framework */,
+				D02323BA19039FF7008B1775 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D02323BB19039FF7008B1775 /* ZKDocumenter */ = {
+			isa = PBXGroup;
+			children = (
+				D02323C719039FF7008B1775 /* ZKAppDelegate.h */,
+				D02323C819039FF7008B1775 /* ZKAppDelegate.m */,
+				D00573F11915EE0900BD8859 /* ZKAppDelegate+Settings.h */,
+				D00573F21915EE0900BD8859 /* ZKAppDelegate+Settings.m */,
+				D02323CA19039FF7008B1775 /* MainMenu.xib */,
+				D0173B0719041526002B093D /* ZKCommentingOperation.h */,
+				D0173B0819041526002B093D /* ZKCommentingOperation.m */,
+				D054151C1914CC4F00C8A228 /* Commenter */,
+				D02323E91903A255008B1775 /* OCCategory */,
+				D02EB326190BE294008F4FE9 /* Images */,
+				D02323CD19039FF7008B1775 /* Images.xcassets */,
+				D02323BC19039FF7008B1775 /* Supporting Files */,
+				D0457466190D432000CE7708 /* NSTableView+ContextMenu.h */,
+				D0457467190D432000CE7708 /* NSTableView+ContextMenu.m */,
+			);
+			path = ZKDocumenter;
+			sourceTree = "<group>";
+		};
+		D02323BC19039FF7008B1775 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D02323BD19039FF7008B1775 /* ZKDocumenter-Info.plist */,
+				D02323BE19039FF7008B1775 /* InfoPlist.strings */,
+				D02323C119039FF7008B1775 /* main.m */,
+				D02323C319039FF7008B1775 /* ZKDocumenter-Prefix.pch */,
+				D02323C419039FF7008B1775 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D02323E91903A255008B1775 /* OCCategory */ = {
+			isa = PBXGroup;
+			children = (
+				D02323EA1903A255008B1775 /* NSString+PDRegex */,
+				D02323ED1903A255008B1775 /* NSString+VVSyntax */,
+			);
+			path = OCCategory;
+			sourceTree = "<group>";
+		};
+		D02323EA1903A255008B1775 /* NSString+PDRegex */ = {
+			isa = PBXGroup;
+			children = (
+				D02323EB1903A255008B1775 /* NSString+PDRegex.h */,
+				D02323EC1903A255008B1775 /* NSString+PDRegex.m */,
+			);
+			path = "NSString+PDRegex";
+			sourceTree = "<group>";
+		};
+		D02323ED1903A255008B1775 /* NSString+VVSyntax */ = {
+			isa = PBXGroup;
+			children = (
+				D02323EE1903A255008B1775 /* NSString+VVSyntax.h */,
+				D02323EF1903A255008B1775 /* NSString+VVSyntax.m */,
+			);
+			path = "NSString+VVSyntax";
+			sourceTree = "<group>";
+		};
+		D02EB326190BE294008F4FE9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D02EB327190BE294008F4FE9 /* multicheck_off.tiff */,
+				D02EB328190BE294008F4FE9 /* multicheck_on.tiff */,
+				D02EB32D190BF6D0008F4FE9 /* addItem.tiff */,
+				D02EB32E190BF6D0008F4FE9 /* removeItem.tiff */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		D054151C1914CC4F00C8A228 /* Commenter */ = {
+			isa = PBXGroup;
+			children = (
+				D054153C1914CE3700C8A228 /* VVDocumenterSetting.h */,
+				D054153D1914CE3700C8A228 /* VVDocumenterSetting.m */,
+				D05415391914CC9200C8A228 /* VVDocumenter.h */,
+				D054153A1914CC9200C8A228 /* VVDocumenter.m */,
+				D054151D1914CC4F00C8A228 /* VVArgument.h */,
+				D054151E1914CC4F00C8A228 /* VVArgument.m */,
+				D054151F1914CC4F00C8A228 /* VVBaseCommenter.h */,
+				D05415201914CC4F00C8A228 /* VVBaseCommenter.m */,
+				D05415211914CC4F00C8A228 /* VVCommenter.h */,
+				D05415221914CC4F00C8A228 /* VVEnumCommenter.h */,
+				D05415231914CC4F00C8A228 /* VVEnumCommenter.m */,
+				D05415241914CC4F00C8A228 /* VVFunctionCommenter.h */,
+				D05415251914CC4F00C8A228 /* VVFunctionCommenter.m */,
+				D05415261914CC4F00C8A228 /* VVMacroCommenter.h */,
+				D05415271914CC4F00C8A228 /* VVMacroCommenter.m */,
+				D05415281914CC4F00C8A228 /* VVMethodCommenter.h */,
+				D05415291914CC4F00C8A228 /* VVMethodCommenter.m */,
+				D054152A1914CC4F00C8A228 /* VVPropertyCommenter.h */,
+				D054152B1914CC4F00C8A228 /* VVPropertyCommenter.m */,
+				D054152C1914CC4F00C8A228 /* VVStructCommenter.h */,
+				D054152D1914CC4F00C8A228 /* VVStructCommenter.m */,
+				D054152E1914CC4F00C8A228 /* VVVariableCommenter.h */,
+				D054152F1914CC4F00C8A228 /* VVVariableCommenter.m */,
+			);
+			path = Commenter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D02323B119039FF7008B1775 /* ZKDocumenter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D02323E319039FF8008B1775 /* Build configuration list for PBXNativeTarget "ZKDocumenter" */;
+			buildPhases = (
+				D02323AE19039FF7008B1775 /* Sources */,
+				D02323AF19039FF7008B1775 /* Frameworks */,
+				D02323B019039FF7008B1775 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZKDocumenter;
+			productName = ZKDocumenter;
+			productReference = D02323B219039FF7008B1775 /* ZKDocumenter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D02323AA19039FF7008B1775 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ZK;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Zeeshan Khan";
+			};
+			buildConfigurationList = D02323AD19039FF7008B1775 /* Build configuration list for PBXProject "ZKDocumenter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D02323A919039FF7008B1775;
+			productRefGroup = D02323B319039FF7008B1775 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D02323B119039FF7008B1775 /* ZKDocumenter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D02323B019039FF7008B1775 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D02323C019039FF7008B1775 /* InfoPlist.strings in Resources */,
+				D02EB330190BF6D0008F4FE9 /* removeItem.tiff in Resources */,
+				D02323CE19039FF7008B1775 /* Images.xcassets in Resources */,
+				D02EB32A190BE294008F4FE9 /* multicheck_on.tiff in Resources */,
+				D02EB32F190BF6D0008F4FE9 /* addItem.tiff in Resources */,
+				D02EB329190BE294008F4FE9 /* multicheck_off.tiff in Resources */,
+				D02323C619039FF7008B1775 /* Credits.rtf in Resources */,
+				D02323CC19039FF7008B1775 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D02323AE19039FF7008B1775 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D02323F31903A255008B1775 /* NSString+VVSyntax.m in Sources */,
+				D05415311914CC4F00C8A228 /* VVBaseCommenter.m in Sources */,
+				D0173B0919041526002B093D /* ZKCommentingOperation.m in Sources */,
+				D05415361914CC4F00C8A228 /* VVPropertyCommenter.m in Sources */,
+				D00573F31915EE0900BD8859 /* ZKAppDelegate+Settings.m in Sources */,
+				D05415321914CC4F00C8A228 /* VVEnumCommenter.m in Sources */,
+				D05415351914CC4F00C8A228 /* VVMethodCommenter.m in Sources */,
+				D02323C219039FF7008B1775 /* main.m in Sources */,
+				D02323C919039FF7008B1775 /* ZKAppDelegate.m in Sources */,
+				D05415331914CC4F00C8A228 /* VVFunctionCommenter.m in Sources */,
+				D0457468190D432000CE7708 /* NSTableView+ContextMenu.m in Sources */,
+				D054153B1914CC9200C8A228 /* VVDocumenter.m in Sources */,
+				D02323F21903A255008B1775 /* NSString+PDRegex.m in Sources */,
+				D05415341914CC4F00C8A228 /* VVMacroCommenter.m in Sources */,
+				D05415381914CC4F00C8A228 /* VVVariableCommenter.m in Sources */,
+				D05415301914CC4F00C8A228 /* VVArgument.m in Sources */,
+				D054153E1914CE3700C8A228 /* VVDocumenterSetting.m in Sources */,
+				D05415371914CC4F00C8A228 /* VVStructCommenter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D02323BE19039FF7008B1775 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D02323BF19039FF7008B1775 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D02323C419039FF7008B1775 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D02323C519039FF7008B1775 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		D02323CA19039FF7008B1775 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D02323CB19039FF7008B1775 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D02323E119039FF8008B1775 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D02323E219039FF8008B1775 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D02323E419039FF8008B1775 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZKDocumenter/ZKDocumenter-Prefix.pch";
+				INFOPLIST_FILE = "ZKDocumenter/ZKDocumenter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D02323E519039FF8008B1775 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZKDocumenter/ZKDocumenter-Prefix.pch";
+				INFOPLIST_FILE = "ZKDocumenter/ZKDocumenter-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D02323AD19039FF7008B1775 /* Build configuration list for PBXProject "ZKDocumenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D02323E119039FF8008B1775 /* Debug */,
+				D02323E219039FF8008B1775 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D02323E319039FF8008B1775 /* Build configuration list for PBXNativeTarget "ZKDocumenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D02323E419039FF8008B1775 /* Debug */,
+				D02323E519039FF8008B1775 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D02323AA19039FF7008B1775 /* Project object */;
+}
