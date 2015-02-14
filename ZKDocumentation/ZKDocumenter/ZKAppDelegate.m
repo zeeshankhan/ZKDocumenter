@@ -584,6 +584,7 @@
 #pragma mark - Commenting
 
 - (IBAction)insertComment:(id)sender {
+//    NSLog(@"%s",__PRETTY_FUNCTION__);
     
     if (_arrResults == nil || _arrResults.count == 0) {
         NSLog(@"Nothing in list to comment.");
@@ -600,11 +601,13 @@
             ZKCommentingOperation *operation = [[ZKCommentingOperation alloc] initWithPath:[rowObject objectForKey:kColumnIdentifierFullPath] completionHandler:^(NSString *path, NSError *error) {
                 
                 NSUInteger cnt = self.queue.operationCount;
-                BOOL isMainThread = [NSThread isMainThread];
-                NSLog(@"[Inside Handler] OpCnt %lu | mainThread: %@", cnt, (isMainThread) ? @"YES" : @"NO");
+//                BOOL isMainThread = [NSThread isMainThread];
+//                NSLog(@"Issue, calling handler twice need to resolve [Inside Handler] OpCnt %lu | mainThread: %@", cnt, (isMainThread) ? @"YES" : @"NO");
                 
-                if (isMainThread && error == nil) {
+                if (cnt > 0 && error == nil) { //isMainThread &&
                     
+//                    NSLog(@"Path: %@", path.lastPathComponent);
+
                     // Get completed object
                     NSArray *arrTemp = [NSArray arrayWithArray:self.arrResults];
                     int idx = 0;
@@ -632,6 +635,12 @@
                         [self.statusLabel setStringValue:finalstatus];
                     });
                 }
+//                else {
+//                    if (cnt > 0)
+//                        NSLog(@"Path: %@", path);
+//                    else
+//                        NSLog(@"NO Path");
+//                }
                 
                 if (cnt == 0) { //&& isMainThread
                     NSLog(@"All files commenting completed!!");
@@ -645,6 +654,7 @@
             }];
             
             [self.queue addOperation:operation];
+            NSLog(@"Operation Added For: %@", rowObject[kColumnIdentifierFileName]);
             [operation release]; operation = nil;
             
         }

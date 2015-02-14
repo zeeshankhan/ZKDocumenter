@@ -106,7 +106,8 @@ NSString const * kMethodNameKey = @"kMethodNameKey";
 }
 
 - (void)giveCallbackWithError:(NSError*)err {
-    
+//    NSLog(@"%s",__PRETTY_FUNCTION__);
+
     if (self.completionBlock) {
 //        dispatch_async(dispatch_get_main_queue(), ^{
 //            self.completionBlock(self.filePath, err);
