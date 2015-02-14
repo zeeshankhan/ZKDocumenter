@@ -22,7 +22,7 @@
 		<key>3F93B06B66F38EC4270564326C3A8EDE6E7394A5</key>
 		<string>../../..</string>
 		<key>c772d72d-d740-72d4-2cd2-ce57b7db7bff</key>
-		<string>../../../../..</string>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/zeeshankhan/ZKDocumenter.git</string>
@@ -38,7 +38,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>c772d72d-d740-72d4-2cd2-ce57b7db7bff</string>
 			<key>IDESourceControlWCCName</key>
-			<string>..</string>
+			<string></string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
